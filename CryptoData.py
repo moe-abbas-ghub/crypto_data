@@ -1,3 +1,4 @@
+#!//usr/local/bin/python3
 import pandas_datareader.data as Reader
 import datetime as Dt
 import os
