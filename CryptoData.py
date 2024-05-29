@@ -7,7 +7,7 @@ import os
 Start = '1900-01-01'  # A very early date to get all historical data
 End = dt.datetime.now().strftime('%Y-%m-%d')  # Current date
 
-CryptoList = ['BTC-USD', 'ETH-USD']
+CryptoList = ['BTC-USD', 'BTC-EUR', 'ETH-USD', 'ETH-EUR']
 
 # Download data
 Crypto_Df = yf.download(CryptoList, start=Start, end=End)['Adj Close']
