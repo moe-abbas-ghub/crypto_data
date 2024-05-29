@@ -3,9 +3,11 @@ import yfinance as yf
 import datetime as dt
 import os
 
-End = dt.datetime.now()
-Start = dt.date(End.year - 4, End.month, End.day)
-CryptoList = ['BTC-USD', 'ETH-USD', 'BNB-USD', 'XRP-USD']
+# Define the start and end dates
+Start = '1900-01-01'  # A very early date to get all historical data
+End = dt.datetime.now().strftime('%Y-%m-%d')  # Current date
+
+CryptoList = ['BTC-USD', 'ETH-USD']
 
 # Download data
 Crypto_Df = yf.download(CryptoList, start=Start, end=End)['Adj Close']
