@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 import yfinance as yf
 import datetime as dt
 import os
