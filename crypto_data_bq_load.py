@@ -38,4 +38,4 @@ job = client.load_table_from_dataframe(Crypto_Df, full_table_id, job_config=job_
 # Wait for the load job to complete
 job.result()
 
-print(f"Loaded {job.output_rows} rows into {full_table_id}.") 
+print(f"Loaded {job.output_rows} rows into {full_table_id}.")
